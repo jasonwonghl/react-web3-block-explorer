@@ -11,8 +11,10 @@ const App = () => (
 		</header>
 
 		<main>
-			<Router exact path="/" component={Home} />
-			<Router exact path="/about-us" component {About} />
+			<Route exact path="/" component={Home} />
+			<Route exact path="/about-us" component={About} />
 		</main>
 	</div>
 )
+
+export default App;
