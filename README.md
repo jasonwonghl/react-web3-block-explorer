@@ -1,3 +1,7 @@
+## React/Redux/Router Boilerplate
+
+React boilerplate that includes Redux and React Router. Includes a simple counter to demonstrate Redux functionality. The original source can be found on [Medium](https://medium.com/@notrab/getting-started-with-create-react-app-redux-react-router-redux-thunk-d6a19259f71f). The folder/file structure has been refactored from the original to be more concise and organised.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
