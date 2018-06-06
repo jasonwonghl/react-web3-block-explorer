@@ -1,20 +1,25 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Home from './Home/Home';
-import About from './About/About';
+import { Route, withRouter } from 'react-router-dom';
+import Blocks from './Blocks';
+import BlockInfo from './BlockInfo';
+import Transactions from './Transactions';
+import TransactionInfo from './TransactionInfo';
 
 const App = () => (
 	<div>
-		<header>
-			<Link to="/">Home</Link>
-			<Link to="/about-us">About</Link>
-		</header>
-
-		<main>
-			<Route exact path="/" component={Home} />
-			<Route exact path="/about-us" component={About} />
-		</main>
+		<table>
+			<tr>
+				<td><Blocks /></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td><Route path="/:block" component={BlockInfo} /></td>
+				<td><Route path="/:block/transactions" component={Transactions} /></td>
+				<td><Route path="/:block/transactions/:transaction" component={TransactionInfo} /></td>
+			</tr>
+		</table>
 	</div>
 )
 
-export default App;
+export default (withRouter(App));

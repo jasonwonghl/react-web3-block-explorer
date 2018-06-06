@@ -1,0 +1,7 @@
+export const WEB3_INITIALISED = 'WEB3_INITIALISED';
+export const INITIAL_BLOCK = 'INITIAL_BLOCK';
+export const GET_TRANSACTION = 'GET_TRANSACTION';
+
+
+
+
